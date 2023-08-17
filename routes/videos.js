@@ -32,9 +32,7 @@ router.post('/', (req, res) => {
     const videos = readVideos();
     console.log(req.body);
     const { id, title, description } = req.body;
-    // if (!id || !title || !description){
-    //     return res.status(400).json({ msg: 'Please fill required field'})
-    // } 
+  
     
     const newVideo = {
         id,
